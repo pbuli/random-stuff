@@ -14,6 +14,7 @@ pub fn addition() {
     println!("4 + {:3.3} = {}", another_file_function(), 4 + another_file_function());
 }
 
+//turns off Rust's function name mangling
 #[no_mangle]
 pub extern "C" fn increment(var: i32) -> i32 {
     var + 1

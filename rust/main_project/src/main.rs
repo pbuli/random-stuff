@@ -6,18 +6,25 @@
 #![allow(non_camel_case_types)]
 #![allow(improper_ctypes)]
 
+//our's rust lib
 extern crate staticlib;
+//crates.io libc wrapper
 extern crate libc;
 
+
+//repr(C) keeps C-style data layout
 #[repr(C)]
+// redeclaration of c struct, without definition
 pub struct c_opaque_obj;
 
+//redefinition of used c struct
 #[repr(C)]
 pub struct c_point {
     pub x: i32,
     pub y: i32,
 }
 
+//redefinition of used c enum
 #[repr(C)]
 enum c_enum {
     RED,
@@ -25,6 +32,7 @@ enum c_enum {
     BLUE
 }
 
+// declarations of c library function
 // link library by name, linking path provided in build.rs file
 #[link(name = "testlibc", kind = "static")]
 extern {
