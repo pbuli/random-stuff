@@ -1,0 +1,11 @@
+[package]
+name = "staticlib"
+version = "0.1.0"
+authors = ["Przemyslaw Bularz <p.bularz@kontakt.io>"]
+
+[lib]
+name = "staticlib"
+crate-type = ["staticlib","rlib"]
+
+[dependencies]
+libc = "*"

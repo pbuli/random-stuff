@@ -1,0 +1,9 @@
+[package]
+name = "main_project"
+version = "0.1.0"
+authors = ["Przemyslaw Bularz <p.bularz@kontakt.io>"]
+build = "src/build.rs"
+
+[dependencies]
+staticlib = { path = "../staticlib"}
+libc = "*"
