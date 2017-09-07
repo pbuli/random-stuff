@@ -5,7 +5,7 @@
   C applications making calls to c static lib made by rust
 
 BUILD:
-gcc test.c target/debug/libstaticlib.a -o test -lpthread -ldl
+gcc test.c ../staticlib/target/debug/libstaticlib.a -o test -lpthread -ldl
 */
 
 // redeclared rust structure Point
