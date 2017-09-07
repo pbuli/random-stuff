@@ -1,5 +1,6 @@
 # rust lib example
 
+```bash
 cd rust/staticlib
 cargo build --lib
 
@@ -12,3 +13,4 @@ cargo build
 
 cargo run
 ./test
+```
